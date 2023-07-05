@@ -89,12 +89,14 @@ while True:
     # Operação de extrato
     elif(operacao == 'E'):
         print("## EXTRATO ##")
-        
+
+        print("#################")
         if(not extrato):
-            print("Não foram realizadas movimentações.")
-            continue
-        
-        print(extrato, end=f"Saldo: R$ {saldo:.2f}\n")
+            print("Não foram realizadas movimentações.", end="\n\n")
+        else:
+            print(extrato, end="\n\n")
+        print(f"Saldo: R$ {saldo:.2f}")
+        print("#################")
     
     # Sair do sistema bancário
     elif(operacao == 'Q'):
