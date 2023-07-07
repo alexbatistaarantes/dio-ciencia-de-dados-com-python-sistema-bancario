@@ -460,12 +460,3 @@ def menu_principal():
 # EXECUÇÃO
 
 menu_principal()
-
-l = [
-    {'a': 1},
-    {'a': 2},
-    {'a': 3},
-    {'a': 4},
-]
-
-print(filtrar_lista_de_dicionarios(l, {'a': 1}))
